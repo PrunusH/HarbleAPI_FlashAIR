@@ -6,8 +6,14 @@
     <TargetFramework>net5.0</TargetFramework>
     <Authors>Lilith</Authors>
     <Copyright>Lilith</Copyright>
-    <ApplicationIcon>FortuneIcon.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\FortuneIcon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Flazzy\**" />
+    <EmbeddedResource Remove="Flazzy\**" />
+    <None Remove="Flazzy\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
@@ -17,4 +23,9 @@
     <ProjectReference Include="Flazzy\Flazzy\Flazzy.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Revisions\HabboAir.swf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

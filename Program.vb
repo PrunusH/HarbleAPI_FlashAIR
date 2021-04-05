@@ -4,7 +4,7 @@ Imports Flazzy.ABC.AVM2.Instructions
 Imports Newtonsoft.Json.Linq
 
 Module Program
-    Private Const TargetSwf As String = "HabboAir.swf"
+    Private Const TargetSwf As String = "Revisions\HabboAir.swf"
     Dim HarbleNamespaceCache As New List(Of NamespaceCache)
 
     Sub Main(ByVal args As String())
